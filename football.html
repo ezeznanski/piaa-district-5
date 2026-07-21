@@ -41,8 +41,8 @@
               <h3>District V Football</h3>
               <p>Windber, Northern Bedford, Meyersdale and Conemaugh Township.</p>
               <div class="resource-actions">
-                <a href="https://district5.piaa.org/sports/fall/football/a/rankings.html" target="_blank" rel="noopener">Weekly Rankings <span>↗</span></a>
-                <a href="https://district5.piaa.org/sports/fall/football/a/2025-26%20FB%20Brackets%20-%201A.pdf" target="_blank" rel="noopener">Playoff Bracket <span>↗</span></a>
+                <a data-resource="football.classA.rankings" href="https://district5.piaa.org/sports/fall/football/a/rankings.html" target="_blank" rel="noopener">Weekly Rankings <span>↗</span></a>
+                <a data-resource="football.classA.bracket" href="https://district5.piaa.org/sports/fall/football/a/2025-26%20FB%20Brackets%20-%201A.pdf" target="_blank" rel="noopener">Playoff Bracket <span>↗</span></a>
               </div>
             </article>
             <article class="classification-card">
@@ -50,8 +50,8 @@
               <h3>District V Football</h3>
               <p>Bedford, Chestnut Ridge, Berlin, Tussey Mountain, North Star and Everett.</p>
               <div class="resource-actions">
-                <a href="https://district5.piaa.org/sports/fall/football/aa/rankings.html" target="_blank" rel="noopener">Weekly Rankings <span>↗</span></a>
-                <a href="https://district5.piaa.org/sports/fall/football/aa/2025-26%20FB%20Brackets%20-%202A.pdf" target="_blank" rel="noopener">Playoff Bracket <span>↗</span></a>
+                <a data-resource="football.classAA.rankings" href="https://district5.piaa.org/sports/fall/football/aa/rankings.html" target="_blank" rel="noopener">Weekly Rankings <span>↗</span></a>
+                <a data-resource="football.classAA.bracket" href="https://district5.piaa.org/sports/fall/football/aa/2025-26%20FB%20Brackets%20-%202A.pdf" target="_blank" rel="noopener">Playoff Bracket <span>↗</span></a>
               </div>
             </article>
             <article class="classification-card">
@@ -80,10 +80,10 @@
       <div class="container">
         <div class="section-heading compact"><p class="eyebrow">Official Documents</p><h2>Season Information</h2></div>
         <div class="document-grid">
-          <a class="document-card featured" href="https://district5.piaa.org/sports/fall/football/Football%20Info%202025-2026.pdf" target="_blank" rel="noopener">
-            <span class="document-icon" aria-hidden="true">📘</span><div><span class="document-type">PDF Handbook</span><h3>2025–2026 Football Information</h3><p>Playoff dates, qualification rules, game administration, ticketing and sport procedures.</p><span class="document-link">Open handbook ↗</span></div>
+          <a class="document-card featured" data-resource="football.handbook" href="https://district5.piaa.org/sports/fall/football/Football%20Info%202025-2026.pdf" target="_blank" rel="noopener">
+            <span class="document-icon" aria-hidden="true">📘</span><div><span class="document-type">Season Handbook</span><h3>2025–2026 Football Information</h3><p>Playoff dates, qualification rules, game administration, ticketing and sport procedures.</p><span class="document-link">Open handbook ↗</span></div>
           </a>
-          <a class="document-card" href="https://district5.piaa.org/sports/fall/football/D5%20Football%20Scores%202025.pdf" target="_blank" rel="noopener">
+          <a class="document-card" data-resource="football.scores" href="https://district5.piaa.org/sports/fall/football/D5%20Football%20Scores%202025.pdf" target="_blank" rel="noopener">
             <span class="document-icon" aria-hidden="true">🏟️</span><div><span class="document-type">Season Report</span><h3>2025 Scores &amp; Schedules</h3><p>District V Class A, AA and AAA schedules and results.</p><span class="document-link">View scores ↗</span></div>
           </a>
         </div>
@@ -92,6 +92,7 @@
   </main>
 
   <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><span class="brand-mark small" aria-hidden="true">V</span><div><strong>PIAA District V</strong><p>Bedford, Fulton &amp; Somerset Counties</p></div></div><p>&copy; <span id="current-year"></span> PIAA District V. All rights reserved.</p></div></footer>
+  <script src="resource-links.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
