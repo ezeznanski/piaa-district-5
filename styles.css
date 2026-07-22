@@ -663,7 +663,7 @@ h3 {
 .champion-sport-card h3{margin:0;padding:1rem 1.15rem;color:var(--gold);background:var(--navy);font-size:1.15rem}
 .champion-sport-card dl{margin:0}
 .champion-sport-card dl div{padding:.8rem 1.15rem;border-top:1px solid var(--border)}
-.champion-sport-card dt{color:var(--navy);font:800 .72rem "Montserrat",Arial,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.champion-sport-card dt{color:var(--maroon);font:800 .72rem "Montserrat",Arial,sans-serif;letter-spacing:.04em;text-transform:uppercase}
 .champion-sport-card dd{margin:.2rem 0 0;color:var(--text);font-weight:700;line-height:1.35}
 @media(max-width:960px){.champion-sport-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:680px){.record-toolbar{align-items:flex-start;flex-direction:column}.champion-sport-grid{grid-template-columns:1fr}.record-year-nav .container{grid-template-columns:1fr 1fr}.record-year-nav a:nth-child(2){display:none}}
