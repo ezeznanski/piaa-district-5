@@ -32,7 +32,75 @@ const meetings=[
 ['2025-26','Apr','8','2026','District V Annual Meeting','Bedford American Legion · 10:00 AM','Complete','',[['Morning Agenda','District%205%20Agenda%204-8-26%20Morning%20Agenda.pdf'],['Committee Agenda','District%205%20Agenda%204-8-2026.pdf'],['Minutes','District%205%20Minutes%204-8-2026.pdf']]],
 ['2025-26','May','6','2026','District V Committee Meeting','Chestnut Ridge Middle School · 9:30 AM','Minutes pending approval','',[['Agenda','District%205%20Agenda%205-6-2026.pdf']]]
 ];
-const archiveDates={"2024-25":"Aug 7 2024,Sep 11 2024,Oct 16 2024,Jan 15 2025 C,Feb 12 2025,Apr 16 2025,May 15 2025","2023-24":"Aug 9 2023,Sep 20 2023,Oct 18 2023,Jan 15 2024,Feb 14 2024,Apr 17 2024,May 17 2024 P","2022-23":"Aug 10 2022,Sep 21 2022,Oct 19 2022,Jan 26 2023,Feb 15 2023,Apr 19 2023,May 10 2023","2021-22":"Aug 11 2021,Sep 22 2021,Oct 20 2021,Jan 27 2022,Feb 16 2022,Apr 20 2022,May 11 2022","2020-21":"Aug 12 2020,Sep 30 2020,Oct 21 2020,Dec 23 2020,Jan 28 2021,Feb 18 2021,Apr 13 2021,Apr 14 2021,May 20 2021","2019-20":"Aug 14 2019,Sep 25 2019,Oct 17 2019,Jan 15 2020,Feb 12 2020,Apr 8 2020 P,May 21 2020","2018-19":"Aug 8 2018,Sep 26 2018,Oct 18 2018,Jan 16 2019,Feb 19 2019,Apr 10 2019,May 9 2019,Jun 12 2019 C","2017-18":"Aug 10 2017,Sep 27 2017,Oct 18 2017,Jan 17 2018,Feb 14 2018,Apr 11 2018,May 10 2018,Jun 13 2018 C","2016-17":"Aug 10 2016,Sep 28 2016,Oct 19 2016,Jan 18 2017 C,Feb 8 2017,Apr 12 2017,May 10 2017,Jun 7 2017 C","2015-16":"Aug 4 2015,Sep 30 2015,Oct 28 2015,Jan 20 2016,Feb 10 2016,Apr 6 2016,May 11 2016,Jun 8 2016","2014-15":"Oct 15 2014,Jan 14 2015 C,Feb 4 2015,Apr 8 2015,May 5 2015","2013-14":"Oct 16 2013,Jan 15 2014 C,Feb 5 2014,Apr 2 2014,May 7 2014,Aug 5 2014","2012-13":"Oct 17 2012,Jan 16 2013,Feb 6 2013 C,Apr 3 2013,May 8 2013,Jun 10 2013 C,Aug 6 2013","2011-12":"Oct 19 2011,Dec 8 2011,Jan 18 2012,Feb 8 2012 C,Apr 11 2012,May 9 2012,Jun 11 2012,Aug 1 2012","2010-11":"Oct 21 2010,Jan 19 2011 C,Feb 9 2011,Apr 4 2011,May 11 2011,Jun 13 2011,Aug 3 2011","2009-10":"Sep 23 2009 C,Oct 21 2009,Jan 20 2010,Feb 27 2010 P,Apr 14 2010,May 12 2010 C,Jun 17 2010,Aug 4 2010","2008-09":"Sep 10 2008,Oct 15 2008 C,Jan 14 2009,Feb 21 2009,Apr 15 2009,May 6 2009,Jun 10 2009 C,Aug 5 2009"};for(const [y,s] of Object.entries(archiveDates))s.split(',').forEach(x=>{let p=x.split(' '),flag=p[3];meetings.push([y,p[0],p[1],p[2],'District V Committee Meeting','See original archive for location and time',flag==='C'?'Cancelled':flag==='P'?'Postponed':'Complete','Historical record',[['Archived documents','https://district5.piaa.org/meetings/index.html']]])});
+const archiveDates={"2024-25":"Aug 7 2024,Sep 11 2024,Oct 16 2024,Jan 15 2025 C,Feb 12 2025,Apr 16 2025,May 15 2025","2023-24":"Aug 9 2023,Sep 20 2023,Oct 18 2023,Jan 15 2024,Feb 14 2024,Apr 17 2024,May 17 2024 P","2022-23":"Aug 10 2022,Sep 21 2022,Oct 19 2022,Jan 26 2023,Feb 15 2023,Apr 19 2023,May 10 2023","2021-22":"Aug 11 2021,Sep 22 2021,Oct 20 2021,Jan 27 2022,Feb 16 2022,Apr 20 2022,May 11 2022","2020-21":"Aug 12 2020,Sep 30 2020,Oct 21 2020,Dec 23 2020,Jan 28 2021,Feb 18 2021,Apr 13 2021,Apr 14 2021,May 20 2021","2019-20":"Aug 14 2019,Sep 25 2019,Oct 17 2019,Jan 15 2020,Feb 12 2020,Apr 8 2020 P,May 21 2020","2018-19":"Aug 8 2018,Sep 26 2018,Oct 18 2018,Jan 16 2019,Feb 19 2019,Apr 10 2019,May 9 2019,Jun 12 2019 C","2017-18":"Aug 10 2017,Sep 27 2017,Oct 18 2017,Jan 17 2018,Feb 14 2018,Apr 11 2018,May 10 2018,Jun 13 2018 C","2016-17":"Aug 10 2016,Sep 28 2016,Oct 19 2016,Jan 18 2017 C,Feb 8 2017,Apr 12 2017,May 10 2017,Jun 7 2017 C","2015-16":"Aug 4 2015,Sep 30 2015,Oct 28 2015,Jan 20 2016,Feb 10 2016,Apr 6 2016,May 11 2016,Jun 8 2016","2014-15":"Oct 15 2014,Jan 14 2015 C,Feb 4 2015,Apr 8 2015,May 5 2015","2013-14":"Oct 16 2013,Jan 15 2014 C,Feb 5 2014,Apr 2 2014,May 7 2014,Aug 5 2014","2012-13":"Oct 17 2012,Jan 16 2013,Feb 6 2013 C,Apr 3 2013,May 8 2013,Jun 10 2013 C,Aug 6 2013","2011-12":"Oct 19 2011,Dec 8 2011,Jan 18 2012,Feb 8 2012 C,Apr 11 2012,May 9 2012,Jun 11 2012,Aug 1 2012","2010-11":"Oct 21 2010,Jan 19 2011 C,Feb 9 2011,Apr 4 2011,May 11 2011,Jun 13 2011,Aug 3 2011","2009-10":"Sep 23 2009 C,Oct 21 2009,Jan 20 2010,Feb 27 2010 P,Apr 14 2010,May 12 2010 C,Jun 17 2010,Aug 4 2010","2008-09":"Sep 10 2008,Oct 15 2008 C,Jan 14 2009,Feb 21 2009,Apr 15 2009,May 6 2009,Jun 10 2009 C,Aug 5 2009"};
+const rootUrl='https://district5.piaa.org/meetings/';
+const special={
+'2024-25|Aug 7 2024':['District%205%20Agenda%208-7-2024%20Morning%20Agenda.pdf','District%205%20Agenda%208-7-2024.pdf','District%205%20Minutes%208-7-2024.pdf'],
+'2024-25|Feb 12 2025':['District%205%20Agenda%202-12-2025.pdf','District%205%20Minutes%202-25-2025.pdf'],
+'2024-25|Apr 16 2025':['District%205%20Agenda%204-16-2025%20Morning%20Agenda.pdf','District%205%20Agenda%204-16-2025.pdf','District%205%20Minutes%204-16-2025.pdf'],
+'2024-25|May 15 2025':['District%205%20Agenda%205-15-2025.pdf','District%205%20Minutes%205-15-25.pdf'],
+'2023-24|Aug 9 2023':['District%205%20Agenda%208-9-2023%20Morning%20Agenda.pdf','District%205%20Agenda%208-9-2023.pdf','District%205%20Minutes%208-9-2023.pdf'],
+'2023-24|Jan 15 2024':['District%205%20Agenda%201-17-2023.pdf','District%205%20Minutes%201-17-2024.pdf'],
+'2023-24|Apr 17 2024':['District%205%20Agenda%204-17-2024%2C%20Morning%20Agenda.pdf','District%205%20Agenda%204-17-2024.pdf','District%205%20Minutes%204-17-2024.pdf'],
+'2022-23|Aug 10 2022':['District%205%20Agenda%208-10-2022%20Morning%20Agenda.pdf','District%205%20Agenda%208-10-2022.pdf','District%205%20Minutes%208-10-2022.pdf'],
+'2022-23|Apr 19 2023':['District%205%20Agenda%204-19-2023%2C%20Morning%20Agenda.pdf','District%205%20Agenda%204-19-2023.pdf','District%205%20Minutes%204-19-2023.pdf'],
+'2021-22|Aug 11 2021':['District%205%20Agenda%208-11-2021%20Morning%20Agenda.pdf','District%205%20Minutes%208-11-2021%20Morning%20Workshop.pdf','District%205%20Agenda%208-11-2021.pdf','District%205%20Minutes%208-11-2021.pdf'],
+'2021-22|Apr 20 2022':['District%205%20Agenda%204-20-2022%2C%20Morning%20Agenda.pdf','District%205%20Agenda%204-20-2022.pdf','District%205%20Minutes%204-20-2022.pdf'],
+'2020-21|Dec 23 2020':['District%205%20Agenda%2012-23-2020%20-%20Members.pdf','District%205%20Minutes%2012-23-2020.pdf'],
+'2020-21|Apr 13 2021':['District%205%20Agenda%204-13-2019%20Annual%20Meeting.pdf'],
+'2019-20|Aug 14 2019':['District%205%20Agenda%208-14-2019%20Morning%20Agenda.pdf','District%205%20Agenda%208-14-2019.pdf','District%205%20Minutes%208-14-2019.pdf'],
+'2019-20|Sep 25 2019':['District%205%20Agenda%209-25-2019.pdf','District%205%20Minutes%209-25-19.pdf'],
+'2018-19|Aug 8 2018':['District%205%20Agenda%208-8-2018%20Morning%20Agenda.pdf','District%205%20Agenda%208-8-2018.pdf','District%205%20Minutes%208-8-2018.pdf'],
+'2018-19|Jan 16 2019':['District%205%20Agenda%201-16-19.pdf','District%205%20Minutes%201-16-19.pdf'],
+'2018-19|Feb 19 2019':['District%205%20Agenda%202-19-19.pdf','District%205%20Minutes%202-19-19.pdf'],
+'2018-19|Apr 10 2019':['District%205%20Agenda%204-10-19%20Morning%20Agenda.pdf','District%205%20Agenda%204-10-2019.pdf','District%205%20Minutes%204-10-2019.pdf'],
+'2017-18|Jan 17 2018':['District%205%20Agenda%201-17-18.pdf','Minutes%201-17-2018.pdf'],
+'2017-18|Apr 11 2018':['District%205%20Agenda%204-11-18%20Morning%20Agenda.pdf','Minutes%204-11-18.pdf']
+};
+const older={
+'2017-18':'District%205%20Agenda%20{d}.pdf|Minutes%20{d}.pdf',
+'2016-17':'District%205%20Agenda%20{d}.pdf|District%205%20Minutes%20{d}.pdf',
+'2015-16':'District%205%20Agenda%20{d}.pdf|District%205%20Minutes%20{d}.pdf',
+'2014-15':'District%205%20Agenda%20{d}.pdf|District%205%20Minutes%20{d}.pdf',
+'2013-14':'District%205%20Agenda%20{d2}.pdf|Minutes%20{d2}.pdf',
+'2012-13':'District%205%20agenda%20{d2}.pdf|Minutes%20{d2}.pdf'
+};
+const veryOld={
+'2011-12|Oct 19 2011':['District%205%20agenda%2010-19-11.pdf','District%205%20Minutes%20-%20October%2019%2C%202011.pdf'],
+'2011-12|Dec 8 2011':['District%205%20agenda%2012-8-11.pdf','District%205%20Minutes%20-%20December%208%2C%202011.pdf'],
+'2011-12|Jan 18 2012':['District%205%20agenda%201-18-12.pdf','District%205%20Minutes%20-%20January%2018%2C%202012.pdf'],
+'2011-12|Apr 11 2012':['District%205%20agenda%204-11-12.pdf','District%205%20Minutes%20-%20April%2011%2C%202012.pdf'],
+'2011-12|May 9 2012':['District%205%20agenda%205-9-12.pdf','District%205%20Minutes%20-%20May%209%2C%202012.pdf'],
+'2011-12|Jun 11 2012':['District%205%20agenda%206-11-12.pdf','District%205%20Minutes%20-%20June%2011%2C%202012.pdf'],
+'2011-12|Aug 1 2012':['District%205%20agenda%208-1-12.pdf','District%205%20Minutes%20-%20August%201%2C%202012.pdf'],
+'2010-11|Oct 21 2010':['District%205%20agenda%2010-21-10.pdf','District%205%20Minutes%20October%2021%2C%202010.pdf'],
+'2010-11|Feb 9 2011':['District%205%20agenda%202-9-11.pdf'],
+'2010-11|Apr 4 2011':['District%205%20agenda%204-4-11.pdf','District%205%20Minutes%20April%204%2C%202011.pdf'],
+'2010-11|May 11 2011':['District%205%20agenda%205-11-11.pdf','District%205%20Minutes%20May%2011%2C%202011.pdf'],
+'2010-11|Jun 13 2011':['District%205%20agenda%206-13-2011.pdf','District%205%20Minutes%20June%2013%2C%202011.pdf'],
+'2010-11|Aug 3 2011':['District%205%20agenda%208-3-11.pdf','District%205%20Minutes%20August%203%2C%202011.pdf'],
+'2009-10|Oct 21 2009':['District%205%20agenda%20Octobe%2021%2C%202009.pdf','District%205%20Minutes%20October%2021%2C%202009.pdf'],
+'2009-10|Jan 20 2010':['District%205%20agenda%20January%2020%2C%202010.pdf','District%205%20Minutes%20January%2020%2C%202010.pdf'],
+'2009-10|Apr 14 2010':['District%205%20agenda%20April%2014%2C%202010.pdf','District%205%20Minutes%20April%2014%2C%202010.pdf'],
+'2009-10|Jun 17 2010':['District%205%20agenda%20June%2017%2C%202010.pdf','District%205%20Minutes%20June%2017%2C%202010.pdf'],
+'2009-10|Aug 4 2010':['District%205%20agenda%20August%204%2C%202010.pdf','District%205%20Minutes%20August%204%2C%202010.pdf'],
+'2008-09|Sep 10 2008':['District%205%20Agenda%2010-Sept-08.pdf','District%205%20Minutes%2010-Sept-08.pdf'],
+'2008-09|Jan 14 2009':['District%205%20Agenda%2014-Jan-09.pdf','District%205%20Minutes%2014-Jan-09.pdf'],
+'2008-09|Feb 21 2009':['District%205%20Agenda%2021-Feb-09.pdf','District%205%20Minutes%2021-Feb-09.pdf'],
+'2008-09|Apr 15 2009':['District%205%20Agenda%2015-Apr-09.pdf','District%205%20Minutes%2015-April-09.pdf'],
+'2008-09|May 6 2009':['District%205%20Agenda%206-May-09.pdf','District%205%20Minutes%206-May-09.pdf'],
+'2008-09|Aug 5 2009':['District%205%20Agenda%205-Aug-09.pdf','District%205%20Minutes%205-Aug-09.pdf']
+};
+const monthNum={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
+function historicalDocs(y,mon,day,yr,status){
+ if(status!=='Complete')return[];
+ const key=y+'|'+mon+' '+day+' '+yr, d=monthNum[mon]+'-'+day+'-'+yr, d2=monthNum[mon]+'-'+day+'-'+String(yr).slice(-2);
+ let files=special[key]||veryOld[key];
+ if(!files&&older[y])files=older[y].split('|').map(x=>x.replace('{d}',d).replace('{d2}',d2));
+ if(!files)files=['District%205%20Agenda%20'+d+'.pdf','District%205%20Minutes%20'+d+'.pdf'];
+ return files.map((file,i)=>[(files.length>2&&i===0)?'Morning Agenda':(/Minutes/i.test(file)?'Minutes':'Agenda'),rootUrl+y+'/'+file]);
+}
+for(const [y,s] of Object.entries(archiveDates))s.split(',').forEach(x=>{let p=x.split(' '),flag=p[3],status=flag==='C'?'Cancelled':flag==='P'?'Postponed':'Complete';meetings.push([y,p[0],p[1],p[2],'District V Committee Meeting','See original record for location and time',status,status==='Complete'?'Historical record':'No documents were issued',historicalDocs(y,p[0],p[1],p[2],status)])});
 const root=document.querySelector('#meeting-groups');
 ['2026-27','2025-26',...Object.keys(archiveDates)].forEach(y=>{const list=meetings.filter(m=>m[0]===y);const s=document.createElement('section');s.className='meeting-year-group';s.dataset.year=y;s.innerHTML='<div class="meeting-year-heading"><div><p class="eyebrow">'+(y==='2026-27'?'Upcoming Schedule':'Recent Record')+'</p><h2>'+y.replace('-', '–20')+'</h2></div><span class="season-count">'+list.length+' meetings</span></div><div class="meeting-grid"></div>';const g=s.querySelector('.meeting-grid');list.forEach(m=>{const a=m[8].map(d=>'<a class="'+(d[0]==='Minutes'?'minutes':'')+'" href="'+(d[1].startsWith('http')?d[1]:base+d[1])+'" target="_blank" rel="noopener">'+d[0]+'</a>').join('');const c=document.createElement('article');c.className='meeting-card';c.dataset.search=m.slice(1,8).join(' ').toLowerCase();c.innerHTML='<div class="meeting-date"><span>'+m[1]+'</span><strong>'+m[2]+'</strong><small>'+m[3]+'</small></div><div class="meeting-info"><span class="meeting-status '+(m[6].includes('pending')?'pending':m[6]==='Complete'?'available':'upcoming')+'">'+m[6]+'</span><h3>'+m[4]+'</h3><p>'+m[5]+'</p>'+(m[7]?'<p class="meeting-note">'+m[7]+'</p>':'')+(a?'<div class="meeting-actions">'+a+'</div>':'')+'</div>';g.append(c)});root.append(s)});
 const search=document.querySelector('#meeting-search'),year=document.querySelector('#meeting-year'),count=document.querySelector('#meeting-count'),empty=document.querySelector('#meeting-empty');
