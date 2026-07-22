@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PIAA District V championship records by school year.">
+  <title>Championship Record | PIAA District V</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="utility-bar"><div class="container utility-inner"><span>Pennsylvania Interscholastic Athletic Association</span><a href="https://www.piaa.org/" target="_blank" rel="noopener">PIAA State Website</a></div></div>
+    <div class="container brand-row">
+      <a class="brand" href="index.html" aria-label="PIAA District V home"><span class="brand-mark" aria-hidden="true">V</span><span><strong>PIAA District V</strong><small>Serving Bedford, Fulton &amp; Somerset Counties</small></span></a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="menu-icon" aria-hidden="true"></span><span>Menu</span></button>
+    </div>
+    <nav id="site-navigation" class="site-nav" aria-label="Main navigation"><div class="container"><ul>
+      <li><a href="index.html">Home</a></li><li><a href="#">Schools</a></li><li><a href="sports.html">Sports</a></li><li><a href="#">Playoffs</a></li><li><a class="active" href="champions.html">Past Champions</a></li><li><a href="#">Forms &amp; Documents</a></li><li><a href="#">Board Information</a></li><li><a href="#">Contact</a></li>
+    </ul></div></nav>
+  </header>
+
+  <main id="main-content">
+    <section class="champion-record-hero">
+      <div class="container">
+        <a class="back-link" href="champions.html">← All championship years</a>
+        <p class="eyebrow">District V History</p>
+        <h1><span id="record-year">Championship</span> Champions</h1>
+        <p id="record-summary">District V championship teams and student-athletes.</p>
+      </div>
+    </section>
+
+    <nav class="record-year-nav" aria-label="Browse championship years">
+      <div class="container">
+        <a id="newer-year" href="#">← Newer year</a>
+        <a href="champions.html">Choose another year</a>
+        <a id="older-year" href="#">Older year →</a>
+      </div>
+    </nav>
+
+    <section class="champion-records section">
+      <div class="container">
+        <div class="record-toolbar">
+          <div><p class="eyebrow">Championship Results</p><h2>Champions by sport</h2></div>
+          <label class="archive-search"><span>Find a sport or school</span><input id="record-search" type="search" placeholder="Example: Bedford or Football" autocomplete="off"></label>
+        </div>
+        <p id="record-count" class="archive-count" aria-live="polite"></p>
+        <div id="record-grid" class="champion-sport-grid"></div>
+        <p id="record-empty" class="archive-empty" hidden>No championship records match that search.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><span class="brand-mark small" aria-hidden="true">V</span><div><strong>PIAA District V</strong><p>Bedford, Fulton &amp; Somerset Counties</p></div></div><p>&copy; <span id="current-year"></span> PIAA District V. All rights reserved.</p></div></footer>
+  <script src="script.js"></script>
+  <script src="champions-data.js"></script>
+  <script src="champion-year.js"></script>
+</body>
+</html>
