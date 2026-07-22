@@ -630,6 +630,7 @@ h3 {
 .filter-button:hover,.filter-button:focus-visible,.filter-button.active{border-color:var(--maroon);color:var(--white);background:var(--maroon)}
 .archive-count{margin-bottom:1.25rem;color:var(--muted)}
 .champion-year-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.85rem}
+.champion-year-card[hidden]{display:none!important}
 .champion-year-card{display:flex;min-height:132px;flex-direction:column;padding:1.15rem;border:1px solid var(--border);border-top:4px solid var(--maroon);border-radius:9px;color:var(--text);background:var(--white);text-decoration:none;box-shadow:0 4px 14px rgba(5,29,52,.05);transition:transform 160ms ease,box-shadow 160ms ease}
 .champion-year-card:hover,.champion-year-card:focus-visible{transform:translateY(-4px);box-shadow:var(--shadow)}
 .champion-year{color:var(--navy);font:800 1.15rem "Montserrat",Arial,sans-serif}
