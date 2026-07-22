@@ -615,3 +615,32 @@ h3 {
 .live-update-note{padding-block:3.5rem;color:var(--white);background:var(--maroon)}.live-update-note .container{max-width:900px;text-align:center}.live-update-note h2{margin-bottom:.65rem;color:var(--white)}.live-update-note p:last-child{margin:0;color:#f1dfe5}
 @media(max-width:960px){.detail-grid{grid-template-columns:1fr}.chairman-card{width:100%}.classification-grid{grid-template-columns:repeat(2,1fr)}.document-grid{grid-template-columns:1fr}}
 @media(max-width:680px){.sport-title-row{align-items:flex-start;flex-direction:column}.sport-title-icon{width:66px;height:66px;font-size:1.9rem}.classification-grid{grid-template-columns:1fr}.classification-card{min-height:260px}.document-card{flex-direction:column}}
+
+
+/* Past Champions archive */
+.champions-hero{background:linear-gradient(115deg,var(--navy-dark),var(--maroon) 72%,var(--maroon-dark))}
+.champions-archive.section{padding-block:clamp(3rem,6vw,5rem);background:var(--off-white)}
+.archive-toolbar{display:flex;align-items:end;justify-content:space-between;margin-bottom:1.5rem;gap:2rem}
+.archive-toolbar h2{margin:0}
+.archive-search{display:grid;width:min(100%,330px);gap:.4rem;color:var(--navy);font:800 .78rem "Montserrat",Arial,sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.archive-search input{width:100%;min-height:48px;padding:.7rem 1rem;border:1px solid var(--border);border-radius:7px;color:var(--text);background:var(--white);font:600 1rem "Source Sans 3",Arial,sans-serif}
+.archive-search input:focus{border-color:var(--maroon);outline:3px solid rgba(122,31,61,.16)}
+.decade-filters{display:flex;flex-wrap:wrap;margin-bottom:1rem;gap:.55rem}
+.filter-button{padding:.55rem .9rem;border:1px solid #d4bcc5;border-radius:999px;color:var(--maroon);background:var(--white);font:800 .78rem "Montserrat",Arial,sans-serif;cursor:pointer}
+.filter-button:hover,.filter-button:focus-visible,.filter-button.active{border-color:var(--maroon);color:var(--white);background:var(--maroon)}
+.archive-count{margin-bottom:1.25rem;color:var(--muted)}
+.champion-year-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.85rem}
+.champion-year-card{display:flex;min-height:132px;flex-direction:column;padding:1.15rem;border:1px solid var(--border);border-top:4px solid var(--maroon);border-radius:9px;color:var(--text);background:var(--white);text-decoration:none;box-shadow:0 4px 14px rgba(5,29,52,.05);transition:transform 160ms ease,box-shadow 160ms ease}
+.champion-year-card:hover,.champion-year-card:focus-visible{transform:translateY(-4px);box-shadow:var(--shadow)}
+.champion-year{color:var(--navy);font:800 1.15rem "Montserrat",Arial,sans-serif}
+.archive-current{align-self:flex-start;margin-top:.45rem;padding:.15rem .45rem;border-radius:999px;color:var(--maroon-dark);background:#f5d781;font:800 .65rem "Montserrat",Arial,sans-serif;text-transform:uppercase}
+.champion-year-link{margin-top:auto;color:var(--maroon);font-weight:800}
+.archive-empty{padding:2rem;border:1px dashed var(--border);border-radius:var(--radius);color:var(--muted);background:var(--white);text-align:center}
+.archive-note{padding-block:clamp(3rem,6vw,4.5rem);color:var(--white);background:linear-gradient(110deg,var(--maroon-dark),var(--maroon))}
+.archive-note .container{max-width:900px}
+.archive-note h2{margin-bottom:.65rem;color:var(--white)}
+.archive-note p:last-child{margin:0;color:#f1dfe5}
+.archive-note .eyebrow{color:var(--gold)}
+@media(max-width:960px){.champion-year-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:680px){.archive-toolbar{align-items:flex-start;flex-direction:column}.archive-search{width:100%}.champion-year-grid{grid-template-columns:repeat(2,1fr)}.champion-year-card{min-height:120px}}
+@media(max-width:420px){.champion-year-grid{grid-template-columns:1fr}}
