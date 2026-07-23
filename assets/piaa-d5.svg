@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">PIAA D5</title>
+  <desc id="desc">Official PIAA logo paired with a bold D5 designation.</desc>
+  <defs>
+    <style>
+      .monogram { font: italic 900 178px Montserrat, Arial, sans-serif; letter-spacing: -12px; }
+      .label { font: 800 30px Montserrat, Arial, sans-serif; letter-spacing: 7px; }
+    </style>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="#ffffff"/>
+  <image x="40" y="55" width="560" height="260" xlink:href="piaa-official.svg"/>
+  <rect x="630" y="46" width="7" height="228" rx="3.5" fill="#d2ac67"/>
+  <g transform="translate(683 0)">
+    <text x="0" y="226" class="monogram" fill="#7c2131">D5</text>
+    <text x="10" y="278" class="label" fill="#003263">DISTRICT V</text>
+  </g>
+</svg>
