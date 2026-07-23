@@ -697,3 +697,43 @@ h3 {
 .gold-button{flex:0 0 auto;color:var(--navy-dark);background:var(--gold)}
 .gold-button:hover,.gold-button:focus-visible{background:var(--white)}
 @media(max-width:760px){.live-resource-heading,.baseball-document-row{align-items:stretch;flex-direction:column}.live-resource-heading .button,.baseball-document-row .button{width:100%;text-align:center}.google-embed{height:560px;min-height:0}}
+
+/* PIAA D5 identity */
+.brand-row .brand-mark {
+  display: block;
+  width: clamp(245px, 29vw, 340px);
+  height: 84px;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 0;
+  background: url("assets/piaa-d5.svg") center / contain no-repeat;
+  font-size: 0;
+  box-shadow: none;
+}
+
+.brand-row .brand > span:not(.brand-mark) {
+  display: none;
+}
+
+.footer-brand .brand-mark.small {
+  display: block;
+  width: 165px;
+  height: 48px;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 0;
+  background: url("assets/piaa-d5.svg") center / contain no-repeat;
+  font-size: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 680px) {
+  .brand-row {
+    gap: 1rem;
+  }
+
+  .brand-row .brand-mark {
+    width: clamp(190px, 58vw, 235px);
+    height: 62px;
+  }
+}
