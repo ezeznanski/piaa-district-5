@@ -18,12 +18,24 @@
     .directory-copy .button{margin-top:.75rem}
     .directory-note{display:flex;align-items:center;padding:clamp(1.75rem,4vw,2.75rem);border-left:5px solid var(--gold);color:var(--text);background:var(--white)}
     .directory-note h3{margin-bottom:.55rem}.directory-note p{margin-bottom:0;color:var(--muted)}
+    .ad-directory{padding-block:clamp(3rem,6vw,5rem);background:var(--white)}
+    .ad-directory .section-heading{max-width:760px}
+    .ad-directory .section-heading>p:last-child{color:var(--muted);font-size:1.1rem}
+    .ad-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+    .ad-card{display:flex;min-height:245px;flex-direction:column;padding:1.4rem;border:1px solid var(--border);border-top:5px solid var(--navy);border-radius:var(--radius);background:var(--off-white);box-shadow:0 5px 18px rgba(5,29,52,.06)}
+    .ad-card h3{margin-bottom:.25rem;color:var(--navy)}
+    .ad-contact{padding-top:.9rem}.ad-contact+.ad-contact{margin-top:.9rem;border-top:1px solid var(--border)}
+    .ad-name{margin-bottom:.2rem;color:var(--maroon);font-family:"Montserrat",Arial,sans-serif;font-weight:800}
+    .ad-phone{margin-bottom:.7rem;color:var(--muted)}
+    .ad-email{display:inline-flex;margin-top:auto;color:var(--maroon);font-weight:800;text-decoration-thickness:2px;text-underline-offset:4px}
+    .ad-note{margin-top:1.5rem;padding:1rem 1.15rem;border-left:4px solid var(--gold);background:var(--off-white);color:var(--muted)}
     .school-help{padding-block:clamp(3rem,6vw,4.5rem)}
     .school-help-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
     .school-help-card{display:flex;min-height:215px;flex-direction:column;padding:1.5rem;border:1px solid var(--border);border-top:5px solid var(--maroon);border-radius:var(--radius);background:var(--white);box-shadow:0 5px 18px rgba(5,29,52,.06)}
     .school-help-card h3{margin-bottom:.45rem}.school-help-card p{color:var(--muted)}
     .school-help-card a{margin-top:auto;color:var(--maroon);font-weight:800;text-decoration-thickness:2px;text-underline-offset:4px}
-    @media(max-width:780px){.directory-panel{grid-template-columns:1fr}.directory-note{border-top:5px solid var(--gold);border-left:0}.school-help-grid{grid-template-columns:1fr}}
+    @media(max-width:980px){.ad-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:780px){.directory-panel{grid-template-columns:1fr}.directory-note{border-top:5px solid var(--gold);border-left:0}.ad-grid,.school-help-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -40,6 +52,35 @@
         <div class="directory-copy"><p class="eyebrow">Official PIAA Records</p><h2>District V School Directory</h2><p>PIAA maintains the official statewide school directory. Use it for the most current District V school information, including administrative contacts and classification records.</p><a class="button button-primary" href="https://www.piaa.org/schools/directory/list.aspx?alpha=A&district=5" target="_blank" rel="noopener">Open Official School Directory <span aria-hidden="true">&nbsp;↗</span></a></div>
         <aside class="directory-note"><div><h3>Using the directory</h3><p>The PIAA page may open with schools beginning with “A.” Use its alphabetical choices or select “All” to browse the complete District V list.</p></div></aside>
       </div>
+    </div></section>
+    <section class="ad-directory" aria-labelledby="ad-directory-title"><div class="container">
+      <div class="section-heading"><p class="eyebrow">School Contacts</p><h2 id="ad-directory-title">Athletic Directors</h2><p>Contact the athletic director or athletics office for a District V member school. Schools are listed alphabetically.</p></div>
+      <div class="ad-grid">
+        <article class="ad-card"><h3>Bedford</h3><div class="ad-contact"><p class="ad-name">Bret Smith</p><p class="ad-phone"><a href="tel:8146234250">814-623-4250</a></p><a class="ad-email" href="mailto:smithb@bedfordasd.org">Email Mr. Smith <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Berlin</h3><div class="ad-contact"><p class="ad-name">Doug Paul, CAA</p><p class="ad-phone"><a href="tel:8142674622">814-267-4622</a></p><a class="ad-email" href="mailto:dougp@bbsd.com">Email Mr. Paul <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Chestnut Ridge</h3><div class="ad-contact"><p class="ad-name">Alana Dorsey</p><p class="ad-phone"><a href="tel:8148393072">814-839-3072</a></p><a class="ad-email" href="mailto:adorsey@crlions.org">Email Ms. Dorsey <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Conemaugh Township</h3><div class="ad-contact"><p class="ad-name">Jarod Feathers</p><p class="ad-phone"><a href="tel:8144794014">814-479-4014</a></p><a class="ad-email" href="mailto:jarod.feathers@ctasd.org">Email Mr. Feathers <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Everett</h3><div class="ad-contact"><p class="ad-name">Moreta Dyke</p><p class="ad-phone">Phone not listed</p><a class="ad-email" href="mailto:mdyke@everettasd.org">Email Ms. Dyke <span aria-hidden="true">&nbsp;→</span></a></div><div class="ad-contact"><p class="ad-name">Chris McCahan</p><p class="ad-phone"><a href="tel:8146529114">814-652-9114</a></p><a class="ad-email" href="mailto:cmcchan@everett.org">Email Mr. McCahan <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Fannett-Metal</h3><div class="ad-contact"><p class="ad-name">Greg Best</p><p class="ad-phone"><a href="tel:7173493016">717-349-3016</a></p><a class="ad-email" href="mailto:bestg@fmtigers.org">Email Mr. Best <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Forbes Road</h3><div class="ad-contact"><p class="ad-name">Heidi O'Neil</p><p class="ad-phone"><a href="tel:8146853866">814-685-3866</a></p><a class="ad-email" href="mailto:honeal@frsd.info">Email Ms. O'Neil <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Foundations Christian Academy</h3><div class="ad-contact"><p class="ad-name">Heather and Nathan Baird</p><p class="ad-phone"><a href="tel:8146232840">814-623-2840</a></p><a class="ad-email" href="mailto:fcaathleticdept@gmail.com">Email Athletic Department <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Johnstown Christian School</h3><div class="ad-contact"><p class="ad-name">Dave Sprankle</p><p class="ad-phone"><a href="tel:8142882588">814-288-2588</a></p><a class="ad-email" href="mailto:dsprankle@jcsfamily.org">Email Mr. Sprankle <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>McConnellsburg</h3><div class="ad-contact"><p class="ad-name">Ken Welsh</p><p class="ad-phone"><a href="tel:7174857034">717-485-7034</a></p><a class="ad-email" href="mailto:kwelsh@cfsd.info">Email Mr. Welsh <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Meyersdale</h3><div class="ad-contact"><p class="ad-name">Craig Gindlesperger</p><p class="ad-phone"><a href="tel:8146348311">814-634-8311</a></p><a class="ad-email" href="mailto:cgindlesperger@masd.net">Email Mr. Gindlesperger <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Northern Bedford</h3><div class="ad-contact"><p class="ad-name">Ryan Cherry</p><p class="ad-phone"><a href="tel:8147664752">814-766-4752</a></p><a class="ad-email" href="mailto:rcherry@nbcsd.org">Email Mr. Cherry <span aria-hidden="true">&nbsp;→</span></a></div><div class="ad-contact"><p class="ad-name">Jeff Batzel</p><p class="ad-phone"><a href="tel:8147664752">814-766-4752</a></p><a class="ad-email" href="mailto:jbatzel@nbcsd.org">Email Mr. Batzel <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>North Star</h3><div class="ad-contact"><p class="ad-name">Kevin Nicklow</p><p class="ad-phone"><a href="tel:81462966512148">814-629-6651 x2148</a></p><a class="ad-email" href="mailto:kevinnicklow@nscougars.com">Email Mr. Nicklow <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Rockwood</h3><div class="ad-contact"><p class="ad-name">Nicholas Buterbaugh</p><p class="ad-phone"><a href="tel:8149264631">814-926-4631</a></p><a class="ad-email" href="mailto:nbuterbaugh@rockwoodschools.org">Email Mr. Buterbaugh <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Shade</h3><div class="ad-contact"><p class="ad-name">Paul Leonard, CAA</p><p class="ad-phone"><a href="tel:8142556995">814-255-6995</a></p><a class="ad-email" href="mailto:pleonard2010@gmail.com">Email Mr. Leonard <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Shanksville</h3><div class="ad-contact"><p class="ad-name">Nathan Menhorn</p><p class="ad-phone"><a href="tel:8142674649">814-267-4649</a></p><a class="ad-email" href="mailto:nmenhorn@sssd.com">Email Mr. Menhorn <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Salisbury</h3><div class="ad-contact"><p class="ad-name">Marty Kemp</p><p class="ad-phone"><a href="tel:81466227416">814-662-2741 x6</a></p><a class="ad-email" href="mailto:kempm@selsd.com">Email Mr. Kemp <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Southern Fulton</h3><div class="ad-contact"><p class="ad-name">Jamie Bivens</p><p class="ad-phone">Phone not listed</p><a class="ad-email" href="mailto:jbivens@sfsd.k12.pa.us">Email Mr. Bivens <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Somerset</h3><div class="ad-contact"><p class="ad-name">Scott Close</p><p class="ad-phone"><a href="tel:8144443230">814-444-3230</a></p><a class="ad-email" href="mailto:sclose@sasd.us">Email Mr. Close <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Somerset Christian School</h3><div class="ad-contact"><p class="ad-name">Shelly Leonard</p><p class="ad-phone"><a href="tel:8144431960">814-443-1960</a></p><a class="ad-email" href="mailto:sleonard@somersetchristianschool.org">Email Ms. Leonard <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Tussey Mountain</h3><div class="ad-contact"><p class="ad-name">Matt McCahan</p><p class="ad-phone"><a href="tel:81463529751181">814-635-2975 x1181</a></p><a class="ad-email" href="mailto:mmccahan@tmsd.net">Email Mr. McCahan <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Turkeyfoot Valley</h3><div class="ad-contact"><p class="ad-name">Lisa Megown</p><p class="ad-phone">Phone not listed</p><a class="ad-email" href="mailto:lmegown@turkeyfoot.k12.pa.us">Email Ms. Megown <span aria-hidden="true">&nbsp;→</span></a></div></article>
+        <article class="ad-card"><h3>Windber</h3><div class="ad-contact"><p class="ad-name">Mark Ott</p><p class="ad-phone"><a href="tel:8144674567">814-467-4567</a></p><a class="ad-email" href="mailto:mott@windberschools.org">Email Mr. Ott <span aria-hidden="true">&nbsp;→</span></a></div></article>
+      </div>
+      <p class="ad-note">Athletic personnel and contact information may change. Please report corrections to District V, and consult the official PIAA directory for complete school records.</p>
     </div></section>
     <section class="school-help"><div class="container"><div class="section-heading"><p class="eyebrow">District V Resources</p><h2>Looking for something specific?</h2></div><div class="school-help-grid">
       <article class="school-help-card"><h3>Committee Contacts</h3><p>Find District V officers, sport directors, school representatives, advisors, and direct contact information.</p><a href="committee.html">View Committee Members <span aria-hidden="true">→</span></a></article>
