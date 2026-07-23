@@ -686,8 +686,10 @@ h3 {
 .live-resource-heading h3{margin:.1rem 0 0;font-size:1.45rem}
 .resource-kicker{color:var(--maroon);font:800 .72rem "Montserrat",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
 .button.button-small{padding:.65rem 1rem;white-space:nowrap}
-.google-embed{height:min(70vh,680px);min-height:500px;border-top:1px solid var(--border);background:#e8edf1}
+.google-embed{height:min(70vh,680px);min-height:500px;margin:0 clamp(.8rem,2vw,1.5rem) clamp(.8rem,2vw,1.5rem);overflow:hidden;border:1px solid var(--border);border-radius:8px;background:#e8edf1}
 .google-embed iframe{display:block;width:100%;height:100%;border:0}
+.rankings-card{width:min(100%,960px);margin-inline:auto}
+.rankings-embed{height:min(58vh,560px);min-height:420px}
 .baseball-documents{padding-block:clamp(3rem,6vw,4.5rem);color:var(--white);background:linear-gradient(110deg,var(--maroon-dark),var(--maroon))}
 .baseball-document-row{display:flex;align-items:center;justify-content:space-between;gap:3rem}
 .baseball-document-row h2{margin-bottom:.55rem;color:var(--white)}
