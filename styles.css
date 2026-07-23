@@ -236,9 +236,6 @@ h3 {
 
 .hero {
   position: relative;
-  display: grid;
-  min-height: 540px;
-  align-items: center;
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(5, 29, 52, 0.98) 0%, rgba(52, 25, 47, 0.91) 53%, rgba(122, 31, 61, 0.70) 100%),
@@ -260,7 +257,11 @@ h3 {
 .hero-content {
   position: relative;
   z-index: 1;
-  padding-block: 6rem;
+  padding-block: clamp(3.5rem, 7vw, 5.5rem);
+}
+
+.hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
 }
 
 .hero-content > p:not(.eyebrow) {
@@ -567,12 +568,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    min-height: 500px;
-  }
-
   .hero-content {
-    padding-block: 4.5rem;
+    padding-block: 3.5rem;
   }
 
   .hero-actions {
