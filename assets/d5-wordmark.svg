@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 250" role="img" aria-labelledby="title">
+  <title id="title">D5 District V</title>
+  <style>
+    .d5 { font: italic 900 178px Montserrat, Arial, sans-serif; letter-spacing: -12px; }
+    .district { font: 800 30px Montserrat, Arial, sans-serif; letter-spacing: 7px; }
+  </style>
+  <text x="14" y="176" class="d5" fill="#7c2131">D5</text>
+  <text x="24" y="226" class="district" fill="#003263">DISTRICT V</text>
+</svg>
