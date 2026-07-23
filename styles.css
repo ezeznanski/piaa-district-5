@@ -674,3 +674,24 @@ h3 {
 .meeting-year-group[hidden],.meeting-card[hidden]{display:none!important}.meeting-year-group{margin-top:2.75rem}.meeting-year-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:1rem}.meeting-year-heading h2{margin:0}.meeting-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.meeting-card{display:grid;grid-template-columns:84px 1fr;overflow:hidden;border:1px solid var(--border);border-radius:var(--radius);background:var(--white);box-shadow:0 5px 18px rgba(5,29,52,.06)}.meeting-date{display:flex;align-items:center;flex-direction:column;justify-content:center;padding:1rem .6rem;color:var(--white);background:var(--navy);text-align:center}.meeting-date span{color:var(--gold);font:800 .76rem "Montserrat",Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}.meeting-date strong{font-size:2rem;line-height:1.05}.meeting-date small{color:#d5e2eb;font-weight:700}.meeting-info{padding:1.15rem}.meeting-info h3{margin:.35rem 0}.meeting-info p{margin:0;color:var(--muted);line-height:1.4}.meeting-note{margin-top:.35rem!important;font-size:.9rem}.meeting-status{display:inline-flex;padding:.17rem .5rem;border-radius:999px;color:var(--white);background:var(--blue);font:800 .65rem "Montserrat",Arial,sans-serif;letter-spacing:.04em;text-transform:uppercase}.meeting-status.pending{color:var(--navy-dark);background:#f5d781}.meeting-status.upcoming{background:var(--maroon)}.meeting-actions{display:flex;flex-wrap:wrap;margin-top:1rem;gap:.45rem}.meeting-actions a{padding:.45rem .68rem;border:1px solid var(--maroon);border-radius:5px;color:var(--maroon);font-size:.84rem;font-weight:800;text-decoration:none}.meeting-actions a:hover,.meeting-actions a:focus-visible{color:var(--white);background:var(--maroon)}.meeting-actions a.minutes{color:var(--white);background:var(--maroon)}.meeting-actions a.minutes:hover{background:var(--navy)}
 .meeting-archive-band{padding-block:3.5rem;color:var(--white);background:linear-gradient(110deg,var(--maroon-dark),var(--maroon))}.meeting-archive-band .container{display:flex;align-items:center;justify-content:space-between;gap:3rem}.meeting-archive-band h2{margin-bottom:.5rem;color:var(--white)}.meeting-archive-band p:not(.eyebrow){max-width:760px;margin:0;color:#f1dfe5}
 @media(max-width:900px){.meeting-grid{grid-template-columns:1fr}.meeting-archive-band .container{align-items:flex-start;flex-direction:column}}@media(max-width:680px){.meeting-toolbar{align-items:stretch;flex-direction:column}.meeting-toolbar label,.meeting-toolbar label:last-child{width:100%}.meeting-year-heading{align-items:flex-start;flex-direction:column;gap:.5rem}.meeting-card{grid-template-columns:70px 1fr}.meeting-archive-band .button{width:100%}}
+
+/* Baseball live-resource template */
+.baseball-hero{background:linear-gradient(115deg,var(--navy-dark),var(--maroon) 72%,var(--maroon-dark))}
+.baseball-intro.section{padding-block:clamp(3rem,6vw,4.5rem)}
+.baseball-intro .section-heading{align-self:center}
+.live-resources{padding-block:clamp(3rem,6vw,5rem);background:var(--off-white)}
+.live-resource-grid{display:grid;gap:1.5rem}
+.live-resource-card{overflow:hidden;border:1px solid var(--border);border-top:5px solid var(--gold);border-radius:var(--radius);background:var(--white);box-shadow:var(--shadow)}
+.live-resource-heading{display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.35rem;gap:1.25rem}
+.live-resource-heading h3{margin:.1rem 0 0;font-size:1.45rem}
+.resource-kicker{color:var(--maroon);font:800 .72rem "Montserrat",Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.button.button-small{padding:.65rem 1rem;white-space:nowrap}
+.google-embed{height:min(70vh,680px);min-height:500px;border-top:1px solid var(--border);background:#e8edf1}
+.google-embed iframe{display:block;width:100%;height:100%;border:0}
+.baseball-documents{padding-block:clamp(3rem,6vw,4.5rem);color:var(--white);background:linear-gradient(110deg,var(--maroon-dark),var(--maroon))}
+.baseball-document-row{display:flex;align-items:center;justify-content:space-between;gap:3rem}
+.baseball-document-row h2{margin-bottom:.55rem;color:var(--white)}
+.baseball-document-row p:not(.eyebrow){max-width:760px;margin:0;color:#f1dfe5}
+.gold-button{flex:0 0 auto;color:var(--navy-dark);background:var(--gold)}
+.gold-button:hover,.gold-button:focus-visible{background:var(--white)}
+@media(max-width:760px){.live-resource-heading,.baseball-document-row{align-items:stretch;flex-direction:column}.live-resource-heading .button,.baseball-document-row .button{width:100%;text-align:center}.google-embed{height:560px;min-height:0}}
