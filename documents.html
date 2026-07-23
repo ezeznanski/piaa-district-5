@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PIAA District V handbooks, tournament administration documents and financial forms.">
+  <title>Documents &amp; Forms | PIAA District V</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .documents-intro {
+      background: var(--off-white);
+    }
+
+    .documents-intro .container {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(260px, .7fr);
+      align-items: center;
+      gap: clamp(2rem, 6vw, 5rem);
+    }
+
+    .documents-intro p:last-child {
+      max-width: 720px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+
+    .document-section {
+      padding-block: clamp(3rem, 6vw, 5rem);
+    }
+
+    .document-section.alternate {
+      background: var(--off-white);
+    }
+
+    .document-section-heading {
+      max-width: 720px;
+      margin-bottom: 1.75rem;
+    }
+
+    .document-section-heading h2 {
+      margin-bottom: .65rem;
+    }
+
+    .document-section-heading p:last-child {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .document-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .document-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.4rem;
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--maroon);
+      border-radius: var(--radius);
+      color: var(--text);
+      background: var(--white);
+      text-decoration: none;
+      box-shadow: 0 5px 18px rgba(5, 29, 52, .06);
+      transition: transform 180ms ease, box-shadow 180ms ease;
+    }
+
+    .document-item:hover,
+    .document-item:focus-visible {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .document-icon {
+      display: grid;
+      width: 46px;
+      height: 46px;
+      flex: 0 0 46px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--maroon);
+      background: #f7edf1;
+      font-size: 1.25rem;
+    }
+
+    .document-type {
+      display: inline-block;
+      margin-bottom: .35rem;
+      color: var(--blue);
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .document-item h3 {
+      margin-bottom: .35rem;
+      color: var(--maroon);
+    }
+
+    .document-item p {
+      margin-bottom: .45rem;
+      color: var(--muted);
+      font-size: .96rem;
+      line-height: 1.45;
+    }
+
+    .document-open {
+      color: var(--blue);
+      font-weight: 800;
+    }
+
+    .meeting-callout {
+      color: var(--white);
+      background: linear-gradient(110deg, var(--maroon-dark), var(--maroon));
+    }
+
+    .meeting-callout .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+
+    .meeting-callout h2 {
+      margin-bottom: .5rem;
+      color: var(--white);
+    }
+
+    .meeting-callout p:not(.eyebrow) {
+      max-width: 760px;
+      margin-bottom: 0;
+      color: #f1dfe5;
+    }
+
+    @media (max-width: 780px) {
+      .documents-intro .container,
+      .document-list {
+        grid-template-columns: 1fr;
+      }
+
+      .meeting-callout .container {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <span>Pennsylvania Interscholastic Athletic Association</span>
+        <a href="https://www.piaa.org/" target="_blank" rel="noopener">PIAA State Website</a>
+      </div>
+    </div>
+
+    <div class="container brand-row">
+      <a class="brand" href="index.html" aria-label="PIAA District V home">
+        <span class="brand-mark" aria-hidden="true">V</span>
+        <span>
+          <strong>PIAA District V</strong>
+          <small>Serving Bedford, Fulton &amp; Somerset Counties</small>
+        </span>
+      </a>
+
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span>Menu</span>
+      </button>
+    </div>
+
+    <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+      <div class="container">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schools.html">Schools</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="https://events.hometownticketing.com/boxoffice/piaad5/L2VtYmVkL2FsbA%3D%3D" target="_blank" rel="noopener">Playoff Tickets</a></li>
+          <li><a href="champions.html">Past Champions</a></li>
+          <li><a class="active" href="documents.html">Forms &amp; Documents</a></li>
+          <li><a href="meetings.html">Meetings &amp; Minutes</a></li>
+          <li><a href="committee.html">Committee</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">District V Resources</p>
+        <h1>Documents &amp; Forms</h1>
+        <p>Current District V handbooks, tournament administration documents and financial forms.</p>
+      </div>
+    </section>
+
+    <section class="documents-intro section">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Quick Access</p>
+          <h2>Official District V resources</h2>
+          <p>Select a document below to open or download the current file. Year-specific materials are labeled so users can confirm they have the correct version.</p>
+        </div>
+        <aside class="contact-panel">
+          <h3>Looking for meeting records?</h3>
+          <p>Committee agendas and approved minutes are maintained separately in the meeting archive.</p>
+          <a class="text-link" href="meetings.html">View Meetings &amp; Minutes <span aria-hidden="true">→</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="document-section">
+      <div class="container">
+        <div class="document-section-heading">
+          <p class="eyebrow">District Governance</p>
+          <h2>Handbook</h2>
+          <p>District V committee information, policies and operating procedures.</p>
+        </div>
+        <div class="document-list">
+          <a class="document-item" href="https://district5.piaa.org/DISTRICT%205%20FORMS/Handbook%202025-26.pdf" target="_blank" rel="noopener">
+            <span class="document-icon" aria-hidden="true">📘</span>
+            <span>
+              <span class="document-type">PDF · 2025–2026</span>
+              <h3>District V Handbook</h3>
+              <p>Committee structure, policies, procedures and district operating information.</p>
+              <span class="document-open">Open handbook ↗</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="document-section alternate">
+      <div class="container">
+        <div class="document-section-heading">
+          <p class="eyebrow">Tournament Administration</p>
+          <h2>Event documents &amp; forms</h2>
+          <p>Resources for member schools, coaches, game managers and championship personnel.</p>
+        </div>
+        <div class="document-list">
+          <a class="document-item" href="https://district5.piaa.org/DISTRICT%205%20FORMS/District%205%20Playoff%20Participants%202025-26.pdf" target="_blank" rel="noopener">
+            <span class="document-icon" aria-hidden="true">📋</span>
+            <span>
+              <span class="document-type">PDF · 2025–2026</span>
+              <h3>Playoff Participants Information Packet</h3>
+              <p>Important tournament information for principals, coaches and athletic directors.</p>
+              <span class="document-open">Open packet ↗</span>
+            </span>
+          </a>
+
+          <a class="document-item" href="https://district5.piaa.org/DISTRICT%205%20FORMS/District%205%20Game%20Managers%20Info%202025-26.pdf" target="_blank" rel="noopener">
+            <span class="document-icon" aria-hidden="true">🗂️</span>
+            <span>
+              <span class="document-type">PDF · 2025–2026</span>
+              <h3>Game Managers Information Packet</h3>
+              <p>Required procedures and information for District V game managers.</p>
+              <span class="document-open">Open packet ↗</span>
+            </span>
+          </a>
+
+          <a class="document-item" href="https://district5.piaa.org/DISTRICT%205%20FORMS/Incident%20Form.pdf" target="_blank" rel="noopener">
+            <span class="document-icon" aria-hidden="true">⚠️</span>
+            <span>
+              <span class="document-type">PDF Form</span>
+              <h3>Incident Form</h3>
+              <p>District V form for reporting an incident associated with a contest or event.</p>
+              <span class="document-open">Open form ↗</span>
+            </span>
+          </a>
+
+          <a class="document-item" href="https://district5.piaa.org/DISTRICT%205%20FORMS/District%20MEDAL%20PRESENTATION%20ROSTER.docx" target="_blank" rel="noopener">
+            <span class="document-icon" aria-hidden="true">🏅</span>
+            <span>
+              <span class="document-type">Word Document</span>
+              <h3>Roster for Medal Presentation</h3>
+              <p>Editable team roster for District V championship medal presentations.</p>
+              <span class="document-open">Download form ↗</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="document-section">
+      <div class="container">
+        <div class="document-section-heading">
+          <p class="eyebrow">Financial Forms</p>
+          <h2>Game manager financial resources</h2>
+          <p>District V financial packets and reporting forms for host and neutral sites.</p>
+        </div>
+        <div class="document-list">
+          <a class="document-item" href="https://district5.piaa.org/DISTRICT%205%20FORMS/D5%20Financial%20Packet%20Contests%202-16-2026%20Higher%20Seed.xlsx" target="_blank" rel="noopener">
+            <span class="document-icon" aria-hidden="true">📊</span>
+            <span>
+              <span class="document-type">Excel Workbook · 2026</span>
+              <h3>Financial Packet — Higher Seed Host</h3>
+              <p>Required financial workbook when the higher-seeded school serves as host.</p>
+              <span class="document-open">Download workbook ↗</span>
+            </span>
+          </a>
+
+          <a class="document-item" href="https://district5.piaa.org/DISTRICT%205%20FORMS/D5%20Financial%20Packet%20Contests%202-16-2026%20Neutral%20Site.xlsx" target="_blank" rel="noopener">
+            <span class="document-icon" aria-hidden="true">📊</span>
+            <span>
+              <span class="document-type">Excel Workbook · 2026</span>
+              <h3>Financial Packet — Neutral Site</h3>
+              <p>Required financial workbook for championship or consolation contests at neutral sites.</p>
+              <span class="document-open">Download workbook ↗</span>
+            </span>
+          </a>
+
+          <a class="document-item" href="https://district5.piaa.org/DISTRICT%205%20FORMS/District%205%20Cash%20Ticket%20Sales.pdf" target="_blank" rel="noopener">
+            <span class="document-icon" aria-hidden="true">🎟️</span>
+            <span>
+              <span class="document-type">PDF Form</span>
+              <h3>Cash Ticket Sales Report</h3>
+              <p>Reporting form for cash ticket sales at District V contests.</p>
+              <span class="document-open">Open report ↗</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="meeting-callout section">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Committee Records</p>
+          <h2>Meeting agendas and minutes</h2>
+          <p>Meeting documents remain in the searchable Meetings &amp; Minutes archive so they are not duplicated here.</p>
+        </div>
+        <a class="button button-light" href="meetings.html">Open Meeting Archive</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-mark small" aria-hidden="true">V</span>
+        <div>
+          <strong>PIAA District V</strong>
+          <p>Bedford, Fulton &amp; Somerset Counties</p>
+        </div>
+      </div>
+      <p>&copy; <span id="current-year"></span> PIAA District V. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
