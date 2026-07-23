@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official PIAA directory access and resources for District V member schools.">
+  <title>Member Schools | PIAA District V</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .schools-main{padding-block:clamp(3rem,6vw,5rem);background:var(--off-white)}
+    .directory-panel{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);overflow:hidden;border-radius:var(--radius);background:var(--navy);box-shadow:var(--shadow)}
+    .directory-copy{padding:clamp(2rem,5vw,3.5rem);color:var(--white)}
+    .directory-copy .eyebrow{color:var(--gold)}.directory-copy h2{margin-bottom:.8rem;color:var(--white)}
+    .directory-copy>p:not(.eyebrow){max-width:700px;color:#dce8f0;font-size:1.12rem}
+    .directory-copy .button{margin-top:.75rem}
+    .directory-note{display:flex;align-items:center;padding:clamp(1.75rem,4vw,2.75rem);border-left:5px solid var(--gold);color:var(--text);background:var(--white)}
+    .directory-note h3{margin-bottom:.55rem}.directory-note p{margin-bottom:0;color:var(--muted)}
+    .school-help{padding-block:clamp(3rem,6vw,4.5rem)}
+    .school-help-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+    .school-help-card{display:flex;min-height:215px;flex-direction:column;padding:1.5rem;border:1px solid var(--border);border-top:5px solid var(--maroon);border-radius:var(--radius);background:var(--white);box-shadow:0 5px 18px rgba(5,29,52,.06)}
+    .school-help-card h3{margin-bottom:.45rem}.school-help-card p{color:var(--muted)}
+    .school-help-card a{margin-top:auto;color:var(--maroon);font-weight:800;text-decoration-thickness:2px;text-underline-offset:4px}
+    @media(max-width:780px){.directory-panel{grid-template-columns:1fr}.directory-note{border-top:5px solid var(--gold);border-left:0}.school-help-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="utility-bar"><div class="container utility-inner"><span>Pennsylvania Interscholastic Athletic Association</span><a href="https://www.piaa.org/" target="_blank" rel="noopener">PIAA State Website</a></div></div>
+    <div class="container brand-row"><a class="brand" href="index.html" aria-label="PIAA District V home"><span class="brand-mark" aria-hidden="true">V</span><span><strong>PIAA District V</strong><small>Serving Bedford, Fulton &amp; Somerset Counties</small></span></a><button class="menu-button" type="button" aria-expanded="false" aria-controls="site-navigation"><span class="menu-icon" aria-hidden="true"></span><span>Menu</span></button></div>
+    <nav id="site-navigation" class="site-nav" aria-label="Main navigation"><div class="container"><ul><li><a href="index.html">Home</a></li><li><a class="active" href="schools.html">Schools</a></li><li><a href="sports.html">Sports</a></li><li><a href="#">Playoffs</a></li><li><a href="champions.html">Past Champions</a></li><li><a href="#">Forms &amp; Documents</a></li><li><a href="meetings.html">Meetings &amp; Minutes</a></li><li><a href="committee.html">Committee</a></li></ul></div></nav>
+  </header>
+  <main id="main-content">
+    <section class="page-hero"><div class="container"><p class="eyebrow">District V Schools</p><h1>Member Schools</h1><p>Find official school contact information, administrators, addresses, phone numbers, and PIAA classification details.</p></div></section>
+    <section class="schools-main"><div class="container">
+      <div class="directory-panel">
+        <div class="directory-copy"><p class="eyebrow">Official PIAA Records</p><h2>District V School Directory</h2><p>PIAA maintains the official statewide school directory. Use it for the most current District V school information, including administrative contacts and classification records.</p><a class="button button-primary" href="https://www.piaa.org/schools/directory/list.aspx?alpha=A&district=5" target="_blank" rel="noopener">Open Official School Directory <span aria-hidden="true">&nbsp;↗</span></a></div>
+        <aside class="directory-note"><div><h3>Using the directory</h3><p>The PIAA page may open with schools beginning with “A.” Use its alphabetical choices or select “All” to browse the complete District V list.</p></div></aside>
+      </div>
+    </div></section>
+    <section class="school-help"><div class="container"><div class="section-heading"><p class="eyebrow">District V Resources</p><h2>Looking for something specific?</h2></div><div class="school-help-grid">
+      <article class="school-help-card"><h3>Committee Contacts</h3><p>Find District V officers, sport directors, school representatives, advisors, and direct contact information.</p><a href="committee.html">View Committee Members <span aria-hidden="true">→</span></a></article>
+      <article class="school-help-card"><h3>Sports Information</h3><p>Access rankings, brackets, handbooks, results, and tournament resources organized by sport.</p><a href="sports.html">Explore District V Sports <span aria-hidden="true">→</span></a></article>
+    </div></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-grid"><div class="footer-brand"><span class="brand-mark small" aria-hidden="true">V</span><div><strong>PIAA District V</strong><p>Bedford, Fulton &amp; Somerset Counties</p></div></div><p>&copy; <span id="current-year"></span> PIAA District V. All rights reserved.</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
