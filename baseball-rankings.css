@@ -3,8 +3,31 @@
   width: min(100%, 650px);
 }
 
+/* Scale the published 8-team bracket down so more of the full bracket is visible at once. */
+.bracket-embed {
+  height: min(72vh, 700px);
+  min-height: 560px;
+}
+
+.bracket-embed iframe {
+  width: 125%;
+  height: 125%;
+  transform: scale(.8);
+  transform-origin: top left;
+}
+
 @media (max-width: 680px) {
   .rankings-card {
     width: 100%;
+  }
+
+  .bracket-embed {
+    min-height: 500px;
+  }
+
+  .bracket-embed iframe {
+    width: 133.333%;
+    height: 133.333%;
+    transform: scale(.75);
   }
 }
