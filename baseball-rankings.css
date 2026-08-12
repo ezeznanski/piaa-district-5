@@ -1,0 +1,10 @@
+/* Baseball rankings embed: keep the public rankings card close to the sheet's natural width. */
+.rankings-card {
+  width: min(100%, 650px);
+}
+
+@media (max-width: 680px) {
+  .rankings-card {
+    width: 100%;
+  }
+}
