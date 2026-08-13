@@ -31,3 +31,26 @@ if (menuButton && navigation) {
     }
   });
 }
+
+if (document.querySelector("#meeting-year")) {
+  const meetingYear = document.querySelector("#meeting-year");
+  const inServiceCard = document.querySelector('.meeting-year-group[data-year="2026-27"] .meeting-card');
+
+  if (meetingYear && inServiceCard) {
+    meetingYear.value = "2026-27";
+
+    const actions = document.createElement("div");
+    actions.className = "meeting-actions";
+    actions.innerHTML = `
+      <a href="meetings/2026-27/District%205%20Agenda%208-13-2026%20Morning%20Agenda.pdf" target="_blank" rel="noopener">In-Service Agenda</a>
+      <a href="meetings/2026-27/District%205%20Agenda%208-13-2026.pdf" target="_blank" rel="noopener">Committee Agenda</a>
+    `;
+
+    const note = inServiceCard.querySelector(".meeting-note");
+    if (note) {
+      note.insertAdjacentElement("afterend", actions);
+    } else {
+      inServiceCard.querySelector(".meeting-info").appendChild(actions);
+    }
+  }
+}
