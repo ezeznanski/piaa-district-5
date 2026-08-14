@@ -1,17 +1,9 @@
 /* Defensive responsive rules for narrow screens. */
-html,
-body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 img {
   max-width: 100%;
   height: auto;
 }
 
-.container,
 .news-grid,
 .news-card,
 .news-card-body,
@@ -21,8 +13,12 @@ img {
 }
 
 @media (max-width: 680px) {
+  /* Use explicit gutters on phones instead of a calculated centered width. */
   .container {
-    width: calc(100% - 2rem);
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+    padding-inline: 1rem;
   }
 
   .brand-row {
