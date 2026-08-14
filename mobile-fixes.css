@@ -1,0 +1,41 @@
+/* Defensive responsive rules for narrow screens. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.news-grid,
+.news-card,
+.news-card-body,
+.home-news-heading,
+.home-news-heading > div {
+  min-width: 0;
+}
+
+@media (max-width: 680px) {
+  .brand-row {
+    gap: .75rem;
+  }
+
+  .brand {
+    min-width: 0;
+    gap: .65rem;
+  }
+
+  .brand > span:last-child {
+    min-width: 0;
+  }
+
+  .brand strong {
+    font-size: 1.1rem;
+  }
+
+  .menu-button {
+    flex-shrink: 0;
+  }
+
+  .home-news-all {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
