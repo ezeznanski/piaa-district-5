@@ -50,7 +50,7 @@ const fallSports = {
   },
   "girls-tennis": {
     title: "Girls Tennis", icon: "🎾", description: "District V singles, doubles and team tournament resources.",
-    chairman: {name: "Christina Ramsey & Kenny Welsh", role: "Girls Tennis Chairpersons", email: "cramsey@cfsd.info", phone: "(717) 860-5971", school: "Central Fulton School District"},
+    chairman: {name: "Ken Welsh", role: "Girls Tennis Chairperson", email: "kwelsh@cfsd.info", phone: "(717) 860-0866", school: "Central Fulton School District"},
     classes: [
       ["Team", "District V Team Tennis", "Current team rankings and championship information.", "https://district5.piaa.org/sports/fall/tennis_girls/rankings.html", "https://district5.piaa.org/sports/fall/tennis_girls/District%205%20Girls%20Tennis%20Champions%202025.pdf"],
       ["Singles", "District V Singles", "Individual championship bracket and results.", null, "https://district5.piaa.org/sports/fall/tennis_girls/Girls%20Tennis%20Brackets%20-%20Singles%202025.pdf"],
