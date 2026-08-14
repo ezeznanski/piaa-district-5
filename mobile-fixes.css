@@ -1,9 +1,17 @@
 /* Defensive responsive rules for narrow screens. */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
+.container,
 .news-grid,
 .news-card,
 .news-card-body,
@@ -13,13 +21,23 @@ img {
 }
 
 @media (max-width: 680px) {
+  .container {
+    width: calc(100% - 2rem);
+  }
+
   .brand-row {
-    gap: .75rem;
+    gap: .65rem;
   }
 
   .brand {
     min-width: 0;
-    gap: .65rem;
+    gap: .55rem;
+  }
+
+  .brand-mark {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
   }
 
   .brand > span:last-child {
@@ -27,11 +45,23 @@ img {
   }
 
   .brand strong {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    white-space: nowrap;
   }
 
   .menu-button {
-    flex-shrink: 0;
+    flex: 0 0 auto;
+    padding-inline: .75rem;
+  }
+
+  .page-hero h1,
+  .page-hero p,
+  .home-news-heading,
+  .news-card,
+  .resource-card,
+  .welcome-grid,
+  .contact-panel {
+    max-width: 100%;
   }
 
   .home-news-all {
