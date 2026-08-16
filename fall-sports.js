@@ -35,7 +35,7 @@ const fallSports = {
       ["Class AA", "Boys & Girls", "District V/VIII championship classifications and advancement information.", null, null]
     ],
     documents: [
-      ["📘", "PDF Handbook", "2025–2026 Cross Country Information", "Championship schedule, classifications, entry form, advancement rules and course information.", "https://district5.piaa.org/sports/fall/crosscountry/Cross%20Country%20Info%202025-26.pdf", "Open handbook"],
+      ["📘", "PDF Information", "2026 Cross Country Championship Information", "Championship schedule, classifications, entry information, advancement rules and course map.", "documents/sports/District-V-Cross-Country-2026-Packet.pdf", "Open information"],
       ["🏅", "Archived Results", "2024 Championship Results", "Individual and team results for the most recent results file published on the legacy site.", "https://district5.piaa.org/sports/fall/crosscountry/2024%20Cross%20Country%20Results.pdf", "View results"]
     ]
   },
