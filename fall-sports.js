@@ -15,7 +15,7 @@ const fallSports = {
       ["Class A", "District V Girls Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/girls/rankings.html", "https://district5.piaa.org/sports/fall/soccer/girls/2026-27%20Girls%20A%20Soccer%20Brackets.pdf"],
       ["Class AA", "District V Girls Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/girls/rankings%202A.html", "https://district5.piaa.org/sports/fall/soccer/girls/2026-27%20Girls%20AA%20Soccer%20Brackets.pdf"]
     ],
-    documents: [["📘", "PDF Information", "2026–2027 Girls Soccer Information", "Girls Soccer ranking system, important dates, playoff procedures, qualifying requirements and school contact information.", "https://district5.piaa.org/sports/fall/soccer/girls/District%20V%20Girls%20Soccer%202026-27%20Packet.pdf", "Open information"]]
+    documents: [["📘", "PDF Information", "2026–2027 Girls Soccer Information", "Girls Soccer ranking system, important dates, playoff procedures, qualifying requirements and school contact information.", "documents/sports/District-V-Girls-Soccer-2026-27-Packet.pdf", "Open information"]]
   },
   "girls-volleyball": {
     title: "Girls Volleyball", icon: "🏐", description: "District V rankings, playoff brackets and tournament information.",
