@@ -6,7 +6,7 @@ const fallSports = {
       ["Class A", "District V Boys Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/boys/rankings.html", "https://district5.piaa.org/sports/fall/soccer/boys/2025-26%20BS%20Brackets%20-%20A.pdf"],
       ["Class AA", "District V Boys Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/boys/rankings%20AA.html", "https://district5.piaa.org/sports/fall/soccer/boys/2025-26%20BS%20Brackets%20-%20AA.pdf"]
     ],
-    documents: [["📘", "PDF Handbook", "2025–2026 Boys Soccer Information", "Ranking procedures, playoff format, important dates and tournament administration.", "https://district5.piaa.org/sports/fall/soccer/boys/Boys%20Soccer%20Packet%202025-26.pdf", "Open handbook"]]
+    documents: [["📘", "PDF Information", "2026–2027 Boys Soccer Information", "Ranking procedures, playoff format, important dates and tournament administration.", "documents/sports/District-V-Boys-Soccer-2026-27-Packet.pdf", "Open information"]]
   },
   "girls-soccer": {
     title: "Girls Soccer", icon: "⚽", description: "District V rankings, playoff brackets and official season information.",
