@@ -46,7 +46,7 @@ const fallSports = {
       ["Boys", "Individual & Team", "District tournament qualification and team competition information.", null, null],
       ["Girls", "Individual & Team", "District tournament qualification and team competition information.", null, null]
     ],
-    documents: [["📘", "Tournament Packet", "2025–2026 Golf Information", "Tournament dates, qualifying standards, advancement rules and registration forms.", "https://district5.piaa.org/sports/fall/golf/Golf%20Tournament%20Info%20for%202025-26.pdf", "Open packet"]]
+    documents: [["📘", "Tournament Packet", "2026 District V Golf Information", "Tournament dates, qualifying standards, advancement rules and registration forms.", "documents/sports/District-V-Golf-2026-27-Packet.pdf", "Open packet"]]
   },
   "girls-tennis": {
     title: "Girls Tennis", icon: "🎾", description: "District V singles, doubles and team tournament resources.",
