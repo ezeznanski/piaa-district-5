@@ -734,3 +734,8 @@ h3 {
     height: 62px;
   }
 }
+
+
+/* Compact weekly reports use the same natural-width presentation as Baseball rankings. */
+.weekly-report-card{width:min(100%,650px);margin-inline:auto}
+@media(max-width:680px){.weekly-report-card{width:100%}}
