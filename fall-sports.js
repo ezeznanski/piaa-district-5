@@ -21,9 +21,10 @@ const fallSports = {
     title: "Girls Volleyball", icon: "🏐", description: "District V rankings, playoff brackets and tournament information.",
     chairman: {name: "Scott Shirley", role: "District V Volleyball Director", email: "sshirl@sasd.us", phone: "(814) 691-7184"},
     classes: [
-      ["Class A", "District V Volleyball", "District V rankings and championship bracket.", null, "https://district5.piaa.org/sports/fall/volleyball/2025-26%20VB%20Brackets%20-%20A.pdf"],
-      ["Class AA", "District V / VIII Subregional", "Subregional rankings and championship bracket.", null, "https://district5.piaa.org/sports/fall/volleyball/2025-26%20VB%20Brackets%20-%20AA.pdf"],
-      ["Class AAA", "District V / VI Subregional", "Rankings and playoff information are maintained by District VI.", "https://sports.blkline.com/sports/reports/rankingReport.action?districtSport=D6+Volleyball+-+Fall", null]
+      ["Class A", "District V Volleyball", "Berlin Brothersvalley, Fannett Metal, Forbes Road, Meyersdale, Northern Bedford, Rockwood, Salisbury Elk Lick, Shade and Turkeyfoot Valley.", null, "https://district5.piaa.org/sports/fall/volleyball/2025-26%20VB%20Brackets%20-%20A.pdf"],
+      ["Class AA", "District V / VIII Subregional", "Conemaugh Township, Everett, McConnellsburg, North Star, Southern Fulton, Tussey Mountain and Windber.", null, "https://district5.piaa.org/sports/fall/volleyball/2025-26%20VB%20Brackets%20-%20AA.pdf"],
+      ["Class AAA", "District V / VI Subregional", "Bedford and Chestnut Ridge.", null, null],
+      ["Class AAAA", "District V / VI Subregional", "Somerset Area.", null, null]
     ],
     documents: [["📘", "PDF Handbook", "2025 Volleyball Format Packet", "Ranking system, classifications, playoff dates and tournament procedures.", "https://district5.piaa.org/sports/fall/volleyball/Volleyball%20Format%20Packet%20for%202025.pdf", "Open handbook"]]
   },
