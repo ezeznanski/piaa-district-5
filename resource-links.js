@@ -1,6 +1,6 @@
 window.DISTRICT_V_RESOURCES = {
   football: {
-    handbook: "https://district5.piaa.org/sports/fall/football/Football%20Info%202025-2026.pdf",
+    handbook: "documents/sports/District-V-Football-2026-27-Packet.pdf",
     scores: "https://district5.piaa.org/sports/fall/football/D5%20Football%20Scores%202025.pdf",
     classA: {
       rankings: "https://district5.piaa.org/sports/fall/football/a/rankings.html",
