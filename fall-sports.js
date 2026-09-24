@@ -26,7 +26,7 @@ const fallSports = {
       ["Class AAA", "District V / VI Subregional", "Bedford and Chestnut Ridge.", null, null],
       ["Class AAAA", "District V / VI Subregional", "Somerset Area.", null, null]
     ],
-    documents: [["📘", "PDF Handbook", "2025 Volleyball Format Packet", "Ranking system, classifications, playoff dates and tournament procedures.", "https://district5.piaa.org/sports/fall/volleyball/Volleyball%20Format%20Packet%20for%202025.pdf", "Open handbook"]]
+    documents: [["📘", "PDF Information", "2026 Volleyball Format Packet", "2026-27 ranking system, classifications, playoff dates and tournament procedures.", "documents/sports/District-V-Volleyball-2026-27-Packet.pdf", "Open information"]]
   },
   "cross-country": {
     title: "Cross Country", icon: "🏃", description: "District V/VIII championship information, entry materials and results.",
