@@ -4,11 +4,11 @@ window.DISTRICT_V_RESOURCES = {
     scores: "https://district5.piaa.org/sports/fall/football/D5%20Football%20Scores%202025.pdf",
     classA: {
       rankings: "https://district5.piaa.org/sports/fall/football/a/rankings.html",
-      bracket: "https://district5.piaa.org/sports/fall/football/a/2025-26%20FB%20Brackets%20-%201A.pdf"
+      bracket: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRQVMJZaFV8KaIo8WCgpkv_1F33pM87OVN2Opg4e8Eq1dGOgDYt2HOaCtz8b59k7gi6ZWXiFYwjo6Ux/pubhtml?gid=1634357382&single=true"
     },
     classAA: {
       rankings: "https://district5.piaa.org/sports/fall/football/aa/rankings.html",
-      bracket: "https://district5.piaa.org/sports/fall/football/aa/2025-26%20FB%20Brackets%20-%202A.pdf"
+      bracket: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRQVMJZaFV8KaIo8WCgpkv_1F33pM87OVN2Opg4e8Eq1dGOgDYt2HOaCtz8b59k7gi6ZWXiFYwjo6Ux/pubhtml?gid=4003&single=true"
     }
   }
 };
