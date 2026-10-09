@@ -3,8 +3,8 @@ const fallSports = {
     title: "Boys Soccer", icon: "⚽", description: "District V rankings, playoff brackets and official season information.",
     chairman: {name: "Jim Foster", role: "Boys Soccer Director", email: "james.foster@ctasd.org", phone: "(814) 479-4014"},
     classes: [
-      ["Class A", "District V Boys Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/boys/rankings.html", "https://district5.piaa.org/sports/fall/soccer/boys/2025-26%20BS%20Brackets%20-%20A.pdf"],
-      ["Class AA", "District V Boys Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/boys/rankings%20AA.html", "https://district5.piaa.org/sports/fall/soccer/boys/2025-26%20BS%20Brackets%20-%20AA.pdf"]
+      ["Class A", "District V Boys Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/boys/rankings.html", "https://docs.google.com/spreadsheets/d/e/2PACX-1vQsRLlmlRh3IDLTA7V9iqbmTw96IuXO0whrsUKN9YdbTINXf0c28KfRli0ClbbgZ7t-21hjHZ0I8YD2/pubhtml?gid=1660188030&single=true", "https://district5.piaa.org/sports/fall/soccer/boys/2025-26%20BS%20Brackets%20-%20A.pdf"],
+      ["Class AA", "District V Boys Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/boys/rankings%20AA.html", "https://docs.google.com/spreadsheets/d/e/2PACX-1vQsRLlmlRh3IDLTA7V9iqbmTw96IuXO0whrsUKN9YdbTINXf0c28KfRli0ClbbgZ7t-21hjHZ0I8YD2/pubhtml?gid=1634357382&single=true", "https://district5.piaa.org/sports/fall/soccer/boys/2025-26%20BS%20Brackets%20-%20AA.pdf"]
     ],
     documents: [["📘", "PDF Information", "2026–2027 Boys Soccer Information", "Ranking procedures, playoff format, important dates and tournament administration.", "documents/sports/District-V-Boys-Soccer-2026-27-Packet.pdf", "Open information"]]
   },
@@ -12,8 +12,8 @@ const fallSports = {
     title: "Girls Soccer", icon: "⚽", description: "District V rankings, playoff brackets and official season information.",
     chairman: {name: "Meredith Hendershot", role: "Girls Soccer Chairperson & Statistician", email: "mhendershot@sfsd.school"},
     classes: [
-      ["Class A", "District V Girls Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/girls/rankings.html", "https://district5.piaa.org/sports/fall/soccer/girls/2026-27%20Girls%20A%20Soccer%20Brackets.pdf"],
-      ["Class AA", "District V Girls Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/girls/rankings%202A.html", "https://district5.piaa.org/sports/fall/soccer/girls/2026-27%20Girls%20AA%20Soccer%20Brackets.pdf"]
+      ["Class A", "District V Girls Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/girls/rankings.html", "https://docs.google.com/spreadsheets/d/e/2PACX-1vReVD7OlYn833A1dZTw_tMJuWvdeLwQmHItEC5iVBDIlAccmhGIEQABPBf_yj0AwIH1l6Y3t73riiv3/pubhtml?gid=1660188030&single=true"],
+      ["Class AA", "District V Girls Soccer", "District V rankings and championship bracket.", "https://district5.piaa.org/sports/fall/soccer/girls/rankings%202A.html", "https://docs.google.com/spreadsheets/d/e/2PACX-1vReVD7OlYn833A1dZTw_tMJuWvdeLwQmHItEC5iVBDIlAccmhGIEQABPBf_yj0AwIH1l6Y3t73riiv3/pubhtml?gid=1634357382&single=true"]
     ],
     documents: [["📘", "PDF Information", "2026–2027 Girls Soccer Information", "Girls Soccer ranking system, important dates, playoff procedures, qualifying requirements and school contact information.", "documents/sports/District-V-Girls-Soccer-2026-27-Packet.pdf", "Open information"]]
   },
@@ -21,9 +21,9 @@ const fallSports = {
     title: "Girls Volleyball", icon: "🏐", description: "District V rankings, playoff brackets and tournament information.",
     chairman: {name: "Scott Shirley", role: "District V Volleyball Director", email: "sshirl@sasd.us", phone: "(814) 691-7184"},
     classes: [
-      ["Class A", "District V Volleyball", "Berlin Brothersvalley, Fannett Metal, Forbes Road, Meyersdale, Northern Bedford, Rockwood, Salisbury Elk Lick, Shade and Turkeyfoot Valley.", null, "https://district5.piaa.org/sports/fall/volleyball/2025-26%20VB%20Brackets%20-%20A.pdf"],
-      ["Class AA", "District V / VIII Subregional", "Conemaugh Township, Everett, McConnellsburg, North Star, Southern Fulton, Tussey Mountain and Windber.", null, "https://district5.piaa.org/sports/fall/volleyball/2025-26%20VB%20Brackets%20-%20AA.pdf"],
-      ["Class AAA", "District V / VI Subregional", "Bedford and Chestnut Ridge.", null, null],
+      ["Class A", "District V Volleyball", "Berlin Brothersvalley, Fannett Metal, Forbes Road, Meyersdale, Northern Bedford, Rockwood, Salisbury Elk Lick, Shade and Turkeyfoot Valley.", null, "https://docs.google.com/spreadsheets/d/e/2PACX-1vRR6mxJQFZ7f6FWprghA00GpnVgYrVvOD3PNnAfvK3LnEokVoLnNFyJa_9QmsHXoOA3H5GxGvDqN3Wp/pubhtml?gid=1660188030&single=true", "https://district5.piaa.org/sports/fall/volleyball/2025-26%20VB%20Brackets%20-%20A.pdf"],
+      ["Class AA", "District V / VIII Subregional", "Conemaugh Township, Everett, McConnellsburg, North Star, Southern Fulton, Tussey Mountain and Windber.", null, "https://docs.google.com/spreadsheets/d/e/2PACX-1vRR6mxJQFZ7f6FWprghA00GpnVgYrVvOD3PNnAfvK3LnEokVoLnNFyJa_9QmsHXoOA3H5GxGvDqN3Wp/pubhtml?gid=8003&single=true", "https://district5.piaa.org/sports/fall/volleyball/2025-26%20VB%20Brackets%20-%20AA.pdf"],
+      ["Class AAA", "District V / VI Subregional", "Bedford and Chestnut Ridge.", null, "https://docs.google.com/spreadsheets/d/e/2PACX-1vRR6mxJQFZ7f6FWprghA00GpnVgYrVvOD3PNnAfvK3LnEokVoLnNFyJa_9QmsHXoOA3H5GxGvDqN3Wp/pubhtml?gid=1634357382&single=true"],
       ["Class AAAA", "District V / VI Subregional", "Somerset Area.", null, null]
     ],
     documents: [["📘", "PDF Information", "2026 Volleyball Format Packet", "2026-27 ranking system, classifications, playoff dates and tournament procedures.", "documents/sports/District-V-Volleyball-2026-27-Packet.pdf", "Open information"]]
@@ -86,8 +86,9 @@ if (sport) {
   document.querySelector("#classification-grid").innerHTML = sport.classes.map(item => `
     <article class="classification-card"><div class="class-label">${item[0]}</div><h3>${item[1]}</h3><p>${item[2]}</p><div class="resource-actions">
       ${item[3] ? `<a href="${item[3]}"${external}>Rankings <span>↗</span></a>` : ""}
-      ${item[4] ? `<a href="${item[4]}"${external}>${item[0] === "Team" ? "Team Champion" : "Playoff Bracket"} <span>↗</span></a>` : ""}
-      ${!item[3] && !item[4] ? '<span class="resource-status">See the official information below.</span>' : ""}
+      ${item[4] ? `<a href="${item[4]}"${external}>${item[5] ? "2026 Bracket" : (item[0] === "Team" ? "Team Champion" : "Playoff Bracket")} <span>↗</span></a>` : ""}
+      ${item[5] ? `<a class="archive-link" href="${item[5]}"${external}>2025 Bracket <span>↗</span></a>` : ""}
+      ${!item[3] && !item[4] && !item[5] ? '<span class="resource-status">See the official information below.</span>' : ""}
     </div></article>`).join("");
 
   const chairman = document.querySelector("#chairman-card");
