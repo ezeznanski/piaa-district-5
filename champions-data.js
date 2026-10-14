@@ -233,7 +233,7 @@ window.CHAMPIONS_DATA = {
         "champions": [
           {
             "label": "A",
-            "winner": "vacated"
+            "winner": "Northern Bedford"
           },
           {
             "label": "AA",
