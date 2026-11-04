@@ -30,7 +30,7 @@ const fallSports = {
   },
   "cross-country": {
     title: "Cross Country", icon: "🏃", description: "District V/VIII championship information, entry materials and results.",
-    chairman: {name: "Scott Close", role: "District V Cross Country Chairman", email: "sclose@sasd.us", phone: "(814) 233-5550", school: "Somerset Area School District"},
+    chairman: {name: "Heidi O'Neal", role: "District V Cross Country Chairman", email: "honeal@frsd.info", phone: "814-215-4104", school: "Forbes Road School District"},
     classes: [
       ["Class A", "Boys & Girls", "District V/VIII championship classifications and advancement information.", null, null],
       ["Class AA", "Boys & Girls", "District V/VIII championship classifications and advancement information.", null, null]
