@@ -37,7 +37,7 @@ const fallSports = {
     ],
     documents: [
       ["📘", "PDF Information", "2026 Cross Country Championship Information", "Championship schedule, classifications, entry information, advancement rules and course map.", "documents/sports/District-V-Cross-Country-2026-Packet.pdf", "Open information"],
-      ["🏅", "Archived Results", "2024 Championship Results", "Individual and team results for the most recent results file published on the legacy site.", "https://district5.piaa.org/sports/fall/crosscountry/2024%20Cross%20Country%20Results.pdf", "View results"]
+      ["🏅", "Championship Results", "2026 Championship Results", "Official individual and team results from the District V/VIII Cross Country Championships.", "https://live.gingerbreadtiming.com/meets/79965/events/xc/2939418", "View results"]
     ]
   },
   "golf": {
